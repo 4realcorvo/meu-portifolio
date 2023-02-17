@@ -1,0 +1,48 @@
+.quemSou{
+    display: flex;
+}
+/*BLOCO 1*/
+
+.Teste{
+    width: 50vw;
+    height: 88vh;
+    background-image: url('C:/Users/Corvo/Documents/ESTUDOS/Programação/meu-portifolio/public/images/perfil-3.png');
+}
+
+/*BLOCO 2*/
+
+.Teste2{
+    width: 50vw;
+    height: 88vh;
+    background-color: #17D647;
+}
+
+.Teste2 h1{
+    color: #025939;
+    font-size: 1.3em;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.Teste2 h2{
+    color: #ffff;
+    font-size: 2.8em;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.Teste2 p{
+    color: #ffff;
+    font-size: 1.4em;
+    text-indent: 40px;
+    text-align: justify;
+    padding-left: 40px;
+    font-weight: 600;
+    width: 600px;
+}
+
+.Teste2 span{
+    color: #025939;
+    font-weight: 800;
+}

@@ -1,0 +1,44 @@
+.back{
+    background-color: #C1FFD1;
+    height: 100vh;
+    display: flex;
+}
+/*Coluna 1*/
+
+.column1{
+    padding: 40px;
+    padding-top: 150px;
+}
+/*Ícones*/
+
+.divIcons{
+    display: flex;
+}
+
+.divIcons2{
+    display: flex;
+}
+
+.icons{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.icons:hover{
+    border: 2px solid #16A83A;
+}
+
+/*Coluna 2*/
+
+.column2 h1{
+    padding-left: 260px;
+    padding-top: 30px;
+}
+
+.column2 h2{
+    padding-left: 210px;
+    padding-top: 120px;
+    width: 600px;
+    color: #16A83A;
+    font-weight: 600;
+}

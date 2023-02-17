@@ -1,0 +1,77 @@
+/*Media Query:
+    1- 1366 x 666 (notebook)
+    1.1 - 1364
+    2- 768 x 1024 (ipad mini)
+    3- 414 x 896 (iphone XR)
+*/
+
+.headerMenu{
+    
+    height: 12vh;
+    background-color: rgba(5, 187, 120, 0.17);
+    display: flex;
+}
+
+.Menu{
+    display: flex;
+    padding-left: 32.1vw;
+}
+
+a{
+    color: #025939;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    height: 40px;
+    background-color: #17d64733;
+}
+
+a:active{
+    color: #ffffffb7;
+}
+
+h1{
+    margin: 0;
+    padding: 10px;
+    color: #025939;
+    font-weight: 600;
+    font-size: 2.3em;
+    padding-left: 40px;
+}
+
+span{
+    color: #17D647;
+}
+
+@media (max-width:1364px){
+    .Menu{
+        padding-left: 28.2vw;
+    }
+    a{
+        color: blue;
+        padding: 20px;
+    }
+}
+
+@media (max-width:1363px){
+    .Menu{
+        padding-left: 33.6vw;
+    }
+}
+
+@media (max-width:1356px){
+    .Menu{
+        padding-left: 33vw;
+    }
+}
+
+@media (max-width:1345px){
+    .Menu{
+        padding-left: 32.8vw;
+    }
+}
