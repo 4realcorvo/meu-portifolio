@@ -1,47 +1,53 @@
-import styles from './Conhecimentos.module.css';
-import {useState} from 'react';
+import styles from "./Conhecimentos.module.css";
+import { useState } from "react";
 
+function Conhecimentos() {
+  const [name, setName] = useState("start");
 
-function Conhecimentos(){
-    
-    function Clique(){
-        
-        const [name, setName] = useState('oi');
-        setName('novo valor')
+  const conhecimentosText = {
+    start:
+      "Área voltada para minhas skills/conhecimentos no mundo da programação",
+    html: "Alguma coisa sobre html",
+    css: "Alguma coisa sobre css",
+    js: "Alguma coisa sobre js",
+    react: "Alguma coisa sobre react",
+    git: "Alguma coisa sobre git",
+  };
 
-    }
+  function handleSetName(newName) {
+    setName(newName);
+  }
 
-    return(
-        <div className={styles.back}>
-            <div className={styles.column1}>
-                <div className={styles.divIcons}>
-                    <div className={styles.icons} onClick= {Clique}>
-                        < img src='/icons/html.png'/>
-                    </div>
-                    <div className={styles.icons}>
-                        < img src='/icons/css.png'/>
-                    </div>
-                    <div className={styles.icons}>
-                        < img src='/icons/js.png'/>
-                    </div>
-                </div>
-                <div className={styles.divIcons2}>
-                    <div className={styles.icons}>
-                            < img src='/icons/react.png'/>
-                        </div>
-                        <div className={styles.icons}>
-                            < img src='/icons/git.png'/>
-                        </div>
-                    <div>
-                </div>
-            </div>
-            </div>
-            <div className={styles.column2}>
-                <h1>Conhecimentos</h1>
-                <h2>Área voltada para minhas skills/conhecimentos no mundo da programção</h2>
-            </div>
+  return (
+    <div className={styles.back}>
+      <div className={styles.column1}>
+        <div className={styles.divIcons}>
+          <div className={styles.icons} onClick={() => handleSetName("html")}>
+            <img src="/icons/html.png" />
+          </div>
+          <div className={styles.icons} onClick={() => handleSetName("css")}>
+            <img src="/icons/css.png" />
+          </div>
+          <div className={styles.icons} onClick={() => handleSetName("js")}>
+            <img src="/icons/js.png" />
+          </div>
         </div>
-    )
+        <div className={styles.divIcons2}>
+          <div className={styles.icons} onClick={() => handleSetName("react")}>
+            <img src="/icons/react.png" />
+          </div>
+          <div className={styles.icons} onClick={() => handleSetName("git")}>
+            <img src="/icons/git.png" />
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div className={styles.column2}>
+        <h1>Conhecimentos</h1>
+        <h2>{conhecimentosText[name]} </h2>
+      </div>
+    </div>
+  );
 }
 
-export default Conhecimentos
+export default Conhecimentos;

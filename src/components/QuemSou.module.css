@@ -6,7 +6,7 @@
 .Teste{
     width: 50vw;
     height: 88vh;
-    background-image: url('C:/Users/Corvo/Documents/ESTUDOS/Programação/meu-portifolio/public/images/perfil-3.png');
+    background-size: cover;
 }
 
 /*BLOCO 2*/
