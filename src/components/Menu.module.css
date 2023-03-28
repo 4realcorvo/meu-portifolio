@@ -17,7 +17,7 @@
     padding-left: 32.1vw;
 }
 
-a{
+p{
     color: #025939;
     font-weight: 600;
     font-size: 1.2em;
@@ -25,13 +25,13 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+p:hover{
     cursor: pointer;
     height: 40px;
     background-color: #17d64733;
 }
 
-a:active{
+p:active{
     color: #ffffffb7;
 }
 
@@ -52,7 +52,7 @@ span{
     .Menu{
         padding-left: 28.2vw;
     }
-    a{
+    p{
         color: blue;
         padding: 20px;
     }

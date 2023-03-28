@@ -1,19 +1,27 @@
-import styles from './Menu.module.css'
+import styles from "./Menu.module.css";
 
-function header(){
-    return(
-        <div>
-            <div className={styles.headerMenu}>
-                <h1><span>Meu</span> Portifófilo</h1>
-                <div className={styles.Menu}>
-                    <a href='#'>Quem sou</a>
-                    <a href='#'>Conhecimentos</a>
-                    <a href='#'>Projeto</a>
-                    <a href='#'>Redes Sociais</a>
-                </div>
-            </div>
-        </div>
-    )
-}
+export const Menu = () => {
+  const scrollFun = (id) => {
+    document
+      .querySelector(`#${id}`)
+      ?.scrollIntoView({ block: "center", behavior: "smooth" });
+  };
 
-export default header
+  function tabBar(name) {
+    scrollFun(name);
+  }
+
+  return (
+    <div className={styles.headerMenu}>
+      <h1>
+        <span>Meu</span> Portifófilo
+      </h1>
+      <div className={styles.Menu}>
+        <p onClick={() => tabBar("home")}>Quem sou</p>
+        <p onClick={() => tabBar("conhecimento")}>Conhecimentos</p>
+        <p onClick={() => tabBar("projetos")}>Projeto</p>
+        <p onClick={() => tabBar("social")}>Redes Sociais</p>
+      </div>
+    </div>
+  );
+};
