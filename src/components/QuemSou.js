@@ -2,7 +2,7 @@ import styles from "./QuemSou.module.css";
 
 function QuemSou() {
   return (
-    <div className={styles.quemSou}>
+    <div className={styles.quemSou} id="home">
       <div
         className={styles.Teste}
         style={{ backgroundImage: "url('images/perfil-1.png')" }}

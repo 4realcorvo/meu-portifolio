@@ -19,7 +19,7 @@ function Conhecimentos() {
   }
 
   return (
-    <div className={styles.back}>
+    <div className={styles.back} id="conhecimento">
       <div className={styles.column1}>
         <div className={styles.divIcons}>
           <div className={styles.icons} onClick={() => handleSetName("html")}>
